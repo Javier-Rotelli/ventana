@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/eloyem.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entre la orilla y el mar</title>
+  </head>
+  <body>
+    <canvas id="canvas-mar"></canvas>
+    <section class="video-display">
+      <div id="liveView" class="videoView">
+        <button id="webcamButton" class="mdc-button mdc-button--raised">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">ENABLE WEBCAM</span>
+        </button>
+        <div style="position: relative">
+          <video
+            id="webcam"
+            style="position: abso"
+            autoplay
+            playsinline
+          ></video>
+          <canvas
+            class="output_canvas"
+            id="output_canvas"
+            style="position: absolute; left: 0px; top: 0px"
+          ></canvas>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
